@@ -132,16 +132,23 @@ button img {
 }
 
 @media (max-width :720px) {
+      body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;     
+    background-color: antiquewhite;
+}
     .container {
         /* border: 2px solid red; */
-        /* width: 100%; */
-        min-width: 1000px;
+        width: 100%;
+        max-width:1000px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         height: auto;
-        margin: 20px auto 20px auto;
+        margin: 0auto;
     }
 
     .left_box img {
@@ -163,5 +170,13 @@ button img {
   border-top-right-radius: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+.price{
+    flex-direction: column;
 }   
+  .content h2,
+  .content h3,
+  .content p {
+    word-wrap: break-word;
+  }
 }
